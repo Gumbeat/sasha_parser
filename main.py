@@ -41,7 +41,7 @@ def get_content(html):
 
     for item in items:
         item_url = item.find('div', class_='product-wrap__name').find('a').get('href')
-        print(item_url)
+        # print(item_url)
         html_details = get_html(item_url).text
         cities = get_details_cities(html_details)
         if len(cities) == 0:
